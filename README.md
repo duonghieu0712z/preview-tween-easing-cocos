@@ -5,7 +5,7 @@
 $$
 \boxed{
     \begin{align*}
-        \underset{x:\: 0 \to 1}{f_{in}(x)} &= f(x)
+        \underset{x: 0 \to 1}{f_{in}(x)} &= f(x)
     \end{align*}
 }
 $$
@@ -15,7 +15,7 @@ $$
 $$
 \boxed{
     \begin{align*}
-        \underset{x:\: 0 \to 1}{f_{out}(x)}
+        \underset{x: 0 \to 1}{f_{out}(x)}
             &= 1 - f_{in}(1 - x)\\
             &= 1 - f(1 - x)
     \end{align*}
@@ -27,7 +27,7 @@ $$
 $$
 \boxed{
     \begin{align*}
-        \underset{x:\: 0 \to 1}{f_{inout}(x)}
+        \underset{x: 0 \to 1}{f_{inout}(x)}
             &= \begin{cases}
                 \frac{f_{in}(2x)}{2} &{\text{if }} x < \frac{1}{2}\\
                 \frac{f_{out}(2x - 1) + 1}{2} &{\text{if }} x \geq \frac{1}{2}
@@ -45,7 +45,7 @@ $$
 $$
 \boxed{
     \begin{align*}
-        \underset{x:\: 0 \to 1}{f_{outin}(x)}
+        \underset{x: 0 \to 1}{f_{outin}(x)}
             &= \begin{cases}
                 \frac{f_{out}(2x)}{2} &{\text{if }} x < \frac{1}{2}\\
                 \frac{f_{in}(2x - 1) + 1}{2} &{\text{if }} x \geq \frac{1}{2}
