@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Normal",
+        "easings": ["linear", "smooth", "fade", "constant"]
+    },
+    {
+        "name": "Sinusoidal",
+        "easings": ["sineIn", "sineOut", "sineInOut", "sineOutIn"]
+    },
+    {
+        "name": "Quadratic",
+        "easings": ["quadIn", "quadOut", "quadInOut", "quadOutIn"]
+    },
+    {
+        "name": "Cubic",
+        "easings": ["cubicIn", "cubicOut", "cubicInOut", "cubicOutIn"]
+    },
+    {
+        "name": "Quartic",
+        "easings": ["quartIn", "quartOut", "quartInOut", "quartOutIn"]
+    },
+    {
+        "name": "Quintic",
+        "easings": ["quintIn", "quintOut", "quintInOut", "quintOutIn"]
+    },
+    {
+        "name": "Exponential",
+        "easings": ["expoIn", "expoOut", "expoInOut", "expoOutIn"]
+    },
+    {
+        "name": "Circular",
+        "easings": ["circIn", "circOut", "circInOut", "circOutIn"]
+    },
+    {
+        "name": "Back",
+        "easings": ["backIn", "backOut", "backInOut", "backOutIn"]
+    },
+    {
+        "name": "Elastic",
+        "easings": ["elasticIn", "elasticOut", "elasticInOut", "elasticOutIn"]
+    },
+    {
+        "name": "Bounce",
+        "easings": ["bounceIn", "bounceOut", "bounceInOut", "bounceOutIn"]
+    }
+]
