@@ -1,5 +1,12 @@
 ## Easing function
 
+$$
+\begin{align*}
+    f(0) = 0\\
+    f(1) = 1
+\end{align*}
+$$
+
 - Ease In:
 
 $$
