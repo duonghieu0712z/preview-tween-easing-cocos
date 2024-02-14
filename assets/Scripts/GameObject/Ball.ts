@@ -2,7 +2,6 @@ import {
     _decorator,
     CCFloat,
     Component,
-    log,
     math,
     Tween,
     tween,
@@ -39,7 +38,7 @@ export class Ball extends Component {
         EventMgr.removeEvents(this);
     }
 
-    initEvents() {
+    protected initEvents() {
         EventMgr.registerEvent(EventCode.BALL.EASE, this.onEase, this);
         EventMgr.registerEvent(EventCode.BALL.RESET, this.onReset, this);
     }
@@ -48,7 +47,7 @@ export class Ball extends Component {
         const target = this.target.clone();
         const distance = target.subtract(this._startPos).length();
         const angle = -math.toDegree(distance / this._radius);
-        const action = tween(this.node)
+        tween(this.node)
             .to(
                 this.duration,
                 {
@@ -57,10 +56,7 @@ export class Ball extends Component {
                 },
                 {
                     easing,
-                    onUpdate: (target: Node, ratio) => {
-                        log(ratio);
-                    },
-                },
+                }
             )
             .start();
     }

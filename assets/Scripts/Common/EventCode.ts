@@ -14,6 +14,12 @@ const EventCode = {
         LOAD_EASINGS: "load-easings",
         SET_EASING: "set-easing",
     },
+
+    GRAPH: {
+        DRAW_COORDINATES: "draw_coordinates",
+        DRAW_EASING: "draw-easing",
+        CLEAR: "clear",
+    },
 };
 
 export default EventCode;

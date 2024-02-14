@@ -11,7 +11,7 @@ export class TransitionPanel extends Component {
     @property(Prefab)
     private transitionPrefab: Prefab = null;
 
-    private _trasitions: any[] = null;
+    private _transitions: any[] = null;
 
     protected onLoad(): void {
         this.initEvents();
@@ -21,7 +21,7 @@ export class TransitionPanel extends Component {
         EventMgr.removeEvents(this);
     }
 
-    initEvents() {
+    protected initEvents() {
         EventMgr.registerEvent(
             EventCode.TRANSITION.LOAD_JSON,
             this.loadJson,
@@ -35,11 +35,11 @@ export class TransitionPanel extends Component {
     }
 
     loadJson(json: any) {
-        this._trasitions = json;
+        this._transitions = json;
     }
 
     loadTransitions() {
-        this._trasitions.forEach((transition) => {
+        this._transitions.forEach((transition) => {
             this.createTransitionButton(transition);
         });
     }

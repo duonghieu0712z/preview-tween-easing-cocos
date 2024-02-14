@@ -20,7 +20,6 @@ export class TransitionButton extends Component {
     }
 
     onClick() {
-        // convert event emitter to event mgr
         EventMgr.emit(EventCode.EASE.ACTIVE_EASING, true);
         EventMgr.emit(EventCode.EASE.LOAD_EASINGS, this._easings);
     }

@@ -19,7 +19,7 @@ export class EaseButton extends Component {
         EventMgr.removeEvents(this);
     }
 
-    initEvents() {
+    protected initEvents() {
         EventMgr.registerEvent(EventCode.EASE.SET_EASING, this.setEasing, this);
     }
 
@@ -31,5 +31,9 @@ export class EaseButton extends Component {
     onClick() {
         EventMgr.emit(EventCode.BALL.RESET);
         EventMgr.emit(EventCode.BALL.EASE, this._easing);
+
+        EventMgr.emit(EventCode.GRAPH.CLEAR);
+        EventMgr.emit(EventCode.GRAPH.DRAW_COORDINATES);
+        EventMgr.emit(EventCode.GRAPH.DRAW_EASING, this._easing);
     }
 }

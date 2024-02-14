@@ -21,7 +21,7 @@ export class EasePanel extends Component {
         EventMgr.removeEvents(this);
     }
 
-    initEvents() {
+    protected initEvents() {
         EventMgr.registerEvent(
             EventCode.EASE.ACTIVE_EASING,
             this.activeEasing,
